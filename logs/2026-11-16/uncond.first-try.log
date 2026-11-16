@@ -1,0 +1,332 @@
+⚠ [8929/11357] Replayed Idoneal.Pintz
+warning: Idoneal/Pintz.lean:71:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:71:23: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:72:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Idoneal/Pintz.lean:74:14: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:76:14: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Idoneal/Pintz.lean:81:22: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:83:59: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:154:26: This simp argument is unused:
+  coe_filter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_Icc, mem_filter, mem_coe] at hm ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:154:50: This simp argument is unused:
+  mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_Icc, coe_filter, mem_filter] at hm ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:159:26: This simp argument is unused:
+  coe_filter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_Icc, mem_filter, mem_coe] at hk ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:159:50: This simp argument is unused:
+  mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_Icc, coe_filter, mem_filter] at hk ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:164:17: This simp argument is unused:
+  coe_filter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_filter, mem_coe] at hk
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:164:41: This simp argument is unused:
+  mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coe_filter, mem_filter] at hk
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:517:45: Variable name `hβ0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hβ0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Idoneal/Pintz.lean:624:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [8930/11357] Replayed Idoneal.Threshold
+warning: Idoneal/Threshold.lean:14:89: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8934/11569] Replayed Idoneal.Character
+warning: Idoneal/Character.lean:35:33: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Idoneal/Character.lean:65:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Idoneal/Character.lean:54:34: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Idoneal/Character.lean:88:57: Unused tactic linter: `push_cast [Nat.one_le_iff_ne_zero]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Idoneal/Character.lean:97:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [8936/11569] Replayed Idoneal.Forms
+warning: Idoneal/Forms.lean:64:17: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Idoneal/Forms.lean:145:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Idoneal/Forms.lean:196:10: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Idoneal/Forms.lean:325:18: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Idoneal/Forms.lean:326:18: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [8957/12043] Built PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support (3.9s)
+✔ [8958/12043] Built Architect.Command (5.3s)
+✔ [8959/12043] Built OAI.NumberTheory.DirichletL.CubicSieve.Factorization (5.8s)
+✔ [8960/12043] Built OAI.NumberTheory.DirichletL.Supremum (5.7s)
+✔ [8961/12043] Built Architect.Basic (5.9s)
+✔ [8962/12043] Built PrimeNumberTheoremAnd.Mathlib.Analysis.Asymptotics.Asymptotics (6.2s)
+✔ [8963/12043] Built OAI.NumberTheory.DirichletL.Moments.Correlation (6.0s)
+✔ [8964/12043] Built OAI.NumberTheory.DirichletL.Descent.Overlap (6.7s)
+✔ [8965/12043] Built OAI.NumberTheory.DirichletL.Detector.Local (6.6s)
+✔ [8966/12043] Built OAI.NumberTheory.DirichletL.Detector.Euler (6.8s)
+✖ [8967/12043] Building RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Kernels (7.3s)
+trace: .> LEAN_PATH=/root/idoneal-lean/.lake/packages/Cli/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/batteries/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/Qq/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/aesop/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/importGraph/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/plausible/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/PrimeNumberTheoremAnd/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/LeanArchitect/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/checkdecls/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/leancert/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/PrimeCert/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/mathlib/.lake/build/lib/lean:/root/idoneal-lean/.lake/build/lib/lean:/root/quasi-riemann-improved/lean/.lake/build/lib/lean:/root/idoneal-lean/unconditional/.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.34.1/bin/lean /root/idoneal-lean/.lake/packages/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/Kernels.lean -o /root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/lib/lean/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/Kernels.olean -i /root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/lib/lean/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/Kernels.ilean -c /root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/ir/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/Kernels.c --setup /root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/ir/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/Kernels.setup.json --json
+error: RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/Kernels.lean:80:4: Type mismatch: After simplification, term
+  Continuous.mul continuous_const hf_cont
+ has type
+  @Continuous E ℝ PseudoMetricSpace.toUniformSpace.toTopologicalSpace
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace ((fun x => I⁻¹) * f)
+but is expected to have type
+  @Continuous E ℝ PseudoMetricSpace.toUniformSpace.toTopologicalSpace
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace fun x => I⁻¹ * f x
+error: RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/Kernels.lean:82:4: Type mismatch: After simplification, term
+  HasCompactSupport.smul_left hf_cs
+ has type
+  @HasCompactSupport E ℝ PseudoMetricSpace.toUniformSpace.toTopologicalSpace Real.instZero ((fun _x => I⁻¹) * f)
+but is expected to have type
+  @HasCompactSupport E ℝ PseudoMetricSpace.toUniformSpace.toTopologicalSpace Real.instZero fun x => I⁻¹ * f x
+✔ [8968/12043] Built OAI.NumberTheory.DirichletL.Descent.Marks (7.1s)
+✔ [8969/12043] Built Transport.Geometry (6.3s)
+✔ [8970/12043] Built OAI.NumberTheory.DirichletL.Detector.Compensation (7.4s)
+✔ [8971/12043] Built OAI.NumberTheory.DirichletL.Detector.Basic (6.7s)
+✔ [8972/12043] Built OAI.NumberTheory.DirichletL.CubicSieve.Algebra (7.6s)
+✔ [8973/12043] Built OAI.NumberTheory.DirichletL.EulerFactors (7.4s)
+✔ [8974/12043] Built OAI.NumberTheory.DirichletL.Descent.Basic (6.0s)
+✔ [8975/12043] Built OAI.NumberTheory.DirichletL.Moments.Basic (7.9s)
+✔ [8976/12043] Built OAI.NumberTheory.DirichletL.Parameters (6.6s)
+✔ [8977/12043] Built OAI.NumberTheory.DirichletL.HeathBrownIteration (6.3s)
+✔ [8978/12043] Built OAI.NumberTheory.DirichletL.Descent.Fibers (6.4s)
+✖ [8979/12043] Building RellichKondrachov.MeasureTheory.Function.LpSpace.Restrict (8.3s)
+trace: .> LEAN_PATH=/root/idoneal-lean/.lake/packages/Cli/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/batteries/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/Qq/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/aesop/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/importGraph/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/plausible/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/PrimeNumberTheoremAnd/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/LeanArchitect/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/checkdecls/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/leancert/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/PrimeCert/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/mathlib/.lake/build/lib/lean:/root/idoneal-lean/.lake/build/lib/lean:/root/quasi-riemann-improved/lean/.lake/build/lib/lean:/root/idoneal-lean/unconditional/.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.34.1/bin/lean /root/idoneal-lean/.lake/packages/rellich-kondrachov/RellichKondrachov/MeasureTheory/Function/LpSpace/Restrict.lean -o /root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/lib/lean/RellichKondrachov/MeasureTheory/Function/LpSpace/Restrict.olean -i /root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/lib/lean/RellichKondrachov/MeasureTheory/Function/LpSpace/Restrict.ilean -c /root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/ir/RellichKondrachov/MeasureTheory/Function/LpSpace/Restrict.c --setup /root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/ir/RellichKondrachov/MeasureTheory/Function/LpSpace/Restrict.setup.json --json
+error: RellichKondrachov/MeasureTheory/Function/LpSpace/Restrict.lean:66:6: Type mismatch: After simplification, term
+  coeFn_add f g
+ has type
+  @Filter.EventuallyEq α E (ae (μ.restrict s)) (↑(↑f + ↑g)) (↑↑f + ↑↑g)
+but is expected to have type
+  @Filter.EventuallyEq α E (ae (μ.restrict s)) (fun x => ↑(↑f + ↑g) x) fun x => ↑↑f x + ↑↑g x
+error: RellichKondrachov/MeasureTheory/Function/LpSpace/Restrict.lean:120:6: Type mismatch: After simplification, term
+  coeFn_smul c f
+ has type
+  @Filter.EventuallyEq α E (ae (μ.restrict s)) (↑↑(c • f)) (c • ↑↑f)
+but is expected to have type
+  @Filter.EventuallyEq α E (ae (μ.restrict s)) (fun x => ↑↑(c • f) x) fun x => c • ↑↑f x
+warning: RellichKondrachov/MeasureTheory/Function/LpSpace/Restrict.lean:195:25: declaration uses `sorry`
+✔ [8984/12043] Built OAI.NumberTheory.DirichletL.FiniteFourier (8.5s)
+✔ [8985/12043] Built Architect.Content (2.3s)
+✔ [8986/12043] Built Architect.CollectUsed (2.5s)
+✔ [8987/12043] Built OAI.NumberTheory.DirichletL.Endpoint (7.5s)
+✔ [8988/12043] Built OAI.NumberTheory.DirichletL.Descent.LocalReflection (7.3s)
+✔ [8989/12043] Built OAI.NumberTheory.DirichletL.Detector.Gauss (9.0s)
+✔ [8990/12043] Built Transport.ReflectedExponent (7.1s)
+✖ [8991/12043] Building RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.H1 (9.3s)
+trace: .> LEAN_PATH=/root/idoneal-lean/.lake/packages/Cli/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/batteries/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/Qq/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/aesop/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/importGraph/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/plausible/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/PrimeNumberTheoremAnd/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/LeanArchitect/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/checkdecls/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/leancert/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/PrimeCert/.lake/build/lib/lean:/root/idoneal-lean/.lake/packages/mathlib/.lake/build/lib/lean:/root/idoneal-lean/.lake/build/lib/lean:/root/quasi-riemann-improved/lean/.lake/build/lib/lean:/root/idoneal-lean/unconditional/.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.34.1/bin/lean /root/idoneal-lean/.lake/packages/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/H1.lean -o /root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/lib/lean/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/H1.olean -i /root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/lib/lean/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/H1.ilean -c /root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/ir/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/H1.c --setup /root/idoneal-lean/.lake/packages/rellich-kondrachov/.lake/build/ir/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/H1.setup.json --json
+error: RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/H1.lean:81:4: Type mismatch: After simplification, term
+  HasCompactSupport.smul_left hf.right
+ has type
+  @HasCompactSupport E ℝ PseudoMetricSpace.toUniformSpace.toTopologicalSpace Real.instZero ((fun x => c) * f)
+but is expected to have type
+  @HasCompactSupport E ℝ PseudoMetricSpace.toUniformSpace.toTopologicalSpace Real.instZero (c • f)
+error: RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/H1.lean:91:2: Type mismatch: After simplification, term
+  this
+ has type
+  @Continuous E E PseudoMetricSpace.toUniformSpace.toTopologicalSpace
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace fun x => (InnerProductSpace.toDual ℝ E).symm (fderiv ℝ f x)
+but is expected to have type
+  @Continuous E E PseudoMetricSpace.toUniformSpace.toTopologicalSpace
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace (grad f)
+error: RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/H1.lean:98:2: Type mismatch: After simplification, term
+  HasCompactSupport.comp_left hf'
+    (of_eq_true (Eq.trans (congrFun' (congrArg Eq (map_zero (InnerProductSpace.toDual ℝ E).symm)) 0) (eq_self 0)))
+ has type
+  @HasCompactSupport E E PseudoMetricSpace.toUniformSpace.toTopologicalSpace
+    SubtractionMonoid.toSubNegZeroMonoid.toNegZeroClass.toZero (⇑(InnerProductSpace.toDual ℝ E).symm ∘ fderiv ℝ f)
+but is expected to have type
+  @HasCompactSupport E E PseudoMetricSpace.toUniformSpace.toTopologicalSpace
+    SubtractionMonoid.toSubNegZeroMonoid.toNegZeroClass.toZero (grad f)
+error: RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/H1.lean:105:4: Type mismatch: After simplification, term
+  tsupport_comp_subset
+    (of_eq_true (Eq.trans (congrFun' (congrArg Eq (map_zero (InnerProductSpace.toDual ℝ E).symm)) 0) (eq_self 0)))
+    (fderiv ℝ f)
+ has type
+  @LE.le (Set E) Set.instLE (tsupport (⇑(InnerProductSpace.toDual ℝ E).symm ∘ fderiv ℝ f)) (tsupport (fderiv ℝ f))
+but is expected to have type
+  @LE.le (Set E) Set.instLE (tsupport (grad f)) (tsupport (fderiv ℝ f))
+✔ [9000/12043] Built Architect.Tactic (2.0s)
+✔ [9001/12043] Built OAI.NumberTheory.DirichletL.CubicSieve.Operator (10s)
+✔ [9002/12043] Built OAI.NumberTheory.DirichletL.Detector (10s)
+✔ [9003/12043] Built OAI.NumberTheory.DirichletL.Continuation (5.3s)
+✔ [9004/12043] Built OAI.NumberTheory.DirichletL.Descent.SlotAssignments (4.1s)
+✔ [9005/12043] Built Transport.SupportedMass (4.5s)
+✔ [9006/12043] Built Architect.Attribute (3.3s)
+✔ [9007/12043] Built OAI.NumberTheory.DirichletL.LogarithmicControl (11s)
+✔ [9008/12043] Built OAI.NumberTheory.DirichletL.Moments.FullCorrelation (5.7s)
+✔ [9009/12043] Built OAI.NumberTheory.DirichletL.Arithmetic.EisensteinCoordinates (12s)
+✔ [9010/12043] Built OAI.NumberTheory.DirichletL.Moments.CRT (5.7s)
+✔ [9011/12043] Built OAI.NumberTheory.DirichletL.Descent.SieveComposition (4.4s)
+✔ [9012/12043] Built OAI.NumberTheory.DirichletL.Moments.PrimePower (5.9s)
+✔ [9013/12043] Built Architect.Output (3.6s)
+✔ [9014/12043] Built OAI.NumberTheory.DirichletL.Inversion.InitialMarkedReserve (3.0s)
+✔ [9015/12043] Built OAI.NumberTheory.DirichletL.Detector.CorrectionBounds (6.6s)
+✔ [9016/12043] Built OAI.NumberTheory.DirichletL.ParametersSlotLengths (6.3s)
+✔ [9017/12043] Built OAI.NumberTheory.DirichletL.FiniteConductor (5.8s)
+✔ [9018/12043] Built PrimeNumberTheoremAnd.Sobolev (14s)
+✔ [9019/12043] Built Architect.Load (2.1s)
+✔ [9020/12043] Built OAI.NumberTheory.DirichletL.CubicSieve.Blocks (5.0s)
+✔ [9021/12043] Built Transport.LocalBounds (8.6s)
+✔ [9022/12043] Built OAI.NumberTheory.DirichletL.CubicDyadicDecay (14s)
+✔ [9023/12043] Built Transport.Continuation (4.8s)
+✔ [9024/12043] Built OAI.NumberTheory.DirichletL.Hecke.MellinIdentity (4.9s)
+✔ [9025/12043] Built OAI.NumberTheory.DirichletL.ContinuationInversion (5.3s)
+✔ [9026/12043] Built Architect (2.1s)
+✔ [9027/12043] Built OAI.NumberTheory.DirichletL.ThetaProduct (17s)
+✔ [9028/12043] Built OAI.NumberTheory.DirichletL.Detector.GramCommonParam (5.2s)
+✔ [9029/12043] Built OAI.NumberTheory.DirichletL.Detector.NormalProduct (4.0s)
+✔ [9030/12043] Built Transport.PhysicalHigh.DistinctSlots (5.2s)
+✔ [9031/12043] Built Transport.Candidate (4.1s)
+✔ [9032/12043] Built OAI.NumberTheory.DirichletL.Mellin.ExponentialSmoothing (7.9s)
+✔ [9033/12043] Built OAI.NumberTheory.DirichletL.CharacterTransport (5.9s)
+✔ [9034/12043] Built OAI.NumberTheory.DirichletL.Arithmetic.EisensteinIdeals (8.1s)
+✔ [9035/12043] Built OAI.NumberTheory.DirichletL.ConductorBounds (6.1s)
+✔ [9036/12043] Built PrimeNumberTheoremAnd.Fourier (6.1s)
+✔ [9037/12043] Built OAI.NumberTheory.DirichletL.GaussSum.ChineseRemainder (9.4s)
+✔ [9038/12043] Built OAI.NumberTheory.DirichletL.ContinuationContour (5.4s)
+✔ [9039/12043] Built Transport.TunedCandidate (6.2s)
+✔ [9040/12043] Built OAI.NumberTheory.DirichletL.Detector.GramCommonSum (4.8s)
+✔ [9041/12043] Built OAI.NumberTheory.DirichletL.Detector.GramCommonLinear (4.9s)
+✔ [9042/12043] Built OAI.NumberTheory.DirichletL.EisensteinTheta (5.8s)
+✔ [9043/12043] Built Transport.Endpoint (22s)
+✔ [9044/12043] Built PrimeNumberTheoremAnd.SmoothExistence (7.8s)
+✔ [9045/12043] Built OAI.NumberTheory.DirichletL.ConductorPresentation (5.7s)
+✔ [9046/12043] Built OAI.NumberTheory.DirichletL.ContinuationPolynomialContour (5.1s)
+✔ [9047/12043] Built OAI.NumberTheory.DirichletL.LatticeSummability (5.4s)
+✔ [9048/12043] Built OAI.NumberTheory.DirichletL.ParametersDetectorScales (14s)
+✔ [9049/12043] Built Transport.Certificate (7.1s)
+✔ [9050/12043] Built OAI.NumberTheory.DirichletL.ResidueCharacter (5.7s)
+✔ [9051/12043] Built OAI.NumberTheory.DirichletL.Hecke.Theta (9.2s)
+✔ [9052/12043] Built OAI.NumberTheory.DirichletL.ContinuationShiftedGaussian (5.6s)
+✔ [9053/12043] Built OAI.NumberTheory.DirichletL.PeriodicThetaRegularity (5.1s)
+✔ [9054/12043] Built OAI.NumberTheory.DirichletL.ParametersCentralBudget (8.2s)
+✔ [9055/12043] Built OAI.NumberTheory.DirichletL.Hecke.ThetaSeries (5.1s)
+✔ [9056/12043] Built OAI.NumberTheory.DirichletL.IdealCharacter (5.0s)
+✔ [9057/12043] Built OAI.NumberTheory.DirichletL.Hecke.Family (5.8s)
+✔ [9058/12043] Built Transport.PhysicalHigh.Parameters (9.8s)
+✔ [9059/12043] Built OAI.NumberTheory.DirichletL.Mellin.LogProfiles (19s)
+✔ [9060/12043] Built OAI.NumberTheory.DirichletL.Hecke.FamilySeries (5.6s)
+✔ [9061/12043] Built OAI.NumberTheory.DirichletL.Hecke.Operations (5.5s)
+✔ [9062/12043] Built OAI.NumberTheory.DirichletL.RayOrthogonality (5.9s)
+✔ [9063/12043] Built OAI.NumberTheory.DirichletL.ParametersHighData (6.5s)
+✔ [9064/12043] Built OAI.NumberTheory.DirichletL.Hecke.Coordinates (6.3s)
+✔ [9065/12043] Built OAI.NumberTheory.DirichletL.ChineseRemainder.AdditiveCharacters (8.3s)
+✔ [9066/12043] Built Transport.TunedEndpoint (23s)
+✔ [9067/12043] Built OAI.NumberTheory.DirichletL.RayQuotient (5.6s)
+✔ [9068/12043] Built OAI.NumberTheory.DirichletL.GaussSum.FiniteFourier (10s)
+✔ [9069/12043] Built OAI.NumberTheory.DirichletL.ParametersHighDataFine (6.3s)
+✔ [9070/12043] Built OAI.NumberTheory.DirichletL.Hecke.CharacterAnalytic (5.9s)
+✔ [9071/12043] Built Transport.TunedCertificate (4.2s)
+⚠ [9072/12043] Built PrimeNumberTheoremAnd.Wiener (30s)
+warning: PrimeNumberTheoremAnd/Wiener.lean:325:8: declaration uses `sorry`
+warning: PrimeNumberTheoremAnd/Wiener.lean:344:8: declaration uses `sorry`
+✔ [9073/12043] Built OAI.NumberTheory.DirichletL.Arithmetic.EisensteinEmbedding (8.6s)
+✔ [9074/12043] Built OAI.NumberTheory.DirichletL.Cusp.MatrixPhases (12s)
+✔ [9075/12043] Built OAI.NumberTheory.DirichletL.PrimeCounting.Progressions (5.0s)
+✔ [9076/12043] Built OAI.NumberTheory.DirichletL.Fourier.PositiveLogProfiles (12s)
+✔ [9077/12043] Built OAI.NumberTheory.DirichletL.GaussSum.CubicNormalization (9.3s)
+✔ [9078/12043] Built OAI.NumberTheory.DirichletL.PrimeCounting.PrimeMass (6.4s)
+✔ [9079/12043] Built OAI.NumberTheory.DirichletL.GaussSum.SexticNormalization (9.1s)
+✔ [9080/12043] Built OAI.NumberTheory.DirichletL.GaussSum.LocalProductAssembly (8.5s)
+✔ [9081/12043] Built OAI.NumberTheory.DirichletL.GaussSum.RamifiedTracePhase (7.4s)
+✔ [9082/12043] Built OAI.NumberTheory.DirichletL.Arithmetic.LatticeCount (10s)
+✔ [9083/12043] Built OAI.NumberTheory.DirichletL.GaussSum.QuadraticTrace (7.5s)
+✔ [9084/12043] Built OAI.NumberTheory.DirichletL.GaussSum.QuadraticNormalization (20s)
+✔ [9085/12043] Built OAI.NumberTheory.DirichletL.Poisson.BinaryGaussian (20s)
+✔ [9086/12043] Built OAI.NumberTheory.DirichletL.GaussSum.GaussianDualLimit (15s)
+✔ [9087/12043] Built OAI.NumberTheory.DirichletL.GaussSum.GaussianFiberMass (16s)
+✔ [9088/12043] Built OAI.NumberTheory.DirichletL.Poisson.GaussianMoments (7.8s)
+✔ [9089/12043] Built OAI.NumberTheory.DirichletL.Poisson.OscillatoryGaussian (7.3s)
+✔ [9090/12043] Built OAI.NumberTheory.DirichletL.PrimeRows.RationalApproximation (10s)
+✔ [9091/12043] Built OAI.NumberTheory.DirichletL.GaussSum.AbelPhaseLimit (14s)
+✔ [9092/12043] Built OAI.NumberTheory.DirichletL.GaussSum.ThetaLocalRows (17s)
+✔ [9093/12043] Built OAI.NumberTheory.DirichletL.Mellin.LocalNonvanishing (7.4s)
+✔ [9094/12043] Built OAI.NumberTheory.DirichletL.Arithmetic.NormFiberMellin (7.9s)
+✔ [9095/12043] Built OAI.NumberTheory.DirichletL.Hecke.NormFiberCharacters (7.9s)
+✔ [9096/12043] Built OAI.NumberTheory.DirichletL.Hecke.LocalEulerIdentities (8.1s)
+✔ [9097/12043] Built OAI.NumberTheory.DirichletL.Hecke.PrimeExtraction (7.3s)
+✔ [9098/12043] Built OAI.NumberTheory.DirichletL.Mellin.FiniteEulerRestoration (8.2s)
+✔ [9099/12043] Built OAI.NumberTheory.DirichletL.PrimeRows.NormFiberExtraction (8.4s)
+✔ [9100/12043] Built OAI.NumberTheory.DirichletL.Hecke.FiniteEulerFactors (11s)
+✔ [9101/12043] Built OAI.NumberTheory.DirichletL.GaussSum.SecondPoissonScale (17s)
+Terminated
+exit 143 seconds 316

@@ -1,0 +1,19 @@
+info: IdonealUnconditional: no previous manifest, creating one from scratch
+info: toolchain not updated; already up-to-date
+info: PrimeCert: cloning https://github.com/b-mehta/PrimeCert.git
+info: PrimeCert: checking out revision '0803c2f6bd289c09704c7d352bb8fcf770cbb9b2'
+info: leancert: cloning https://github.com/alerad/leancert.git
+info: leancert: checking out revision '7f91b6eb3567437f6cfac03ed279706603ee22f4'
+info: checkdecls: cloning https://github.com/PatrickMassot/checkdecls.git
+info: checkdecls: checking out revision '3d425859e73fcfbef85b9638c2a91708ef4a22d4'
+info: LeanArchitect: cloning https://github.com/hanwenzhu/LeanArchitect.git
+info: LeanArchitect: checking out revision '468e8f58fb4ad6e6ad672a08da6d0d0531e95a97'
+info: PrimeNumberTheoremAnd: cloning https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git
+info: PrimeNumberTheoremAnd: checking out revision 'c39a751132c88b6e8080b74c74023fd95b3d8be0'
+info: rellich-kondrachov: cloning https://github.com/abenenson/rellich-kondrachov.git
+info: rellich-kondrachov: checking out revision '70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23'
+info: mathlib: running post-update hooks
+
+real	0m11.627s
+user	0m10.052s
+sys	0m3.330s

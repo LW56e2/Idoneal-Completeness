@@ -1,0 +1,16 @@
+'Idoneal.small_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Idoneal.high_omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Idoneal.hasTriple_of_not_known' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Idoneal.isIdoneal_of_mem_known' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Idoneal.idoneal_numbers_completeness_of_noRealZeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Idoneal.idoneal_numbers_completeness_of_zeroFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Idoneal.idoneal_numbers_completeness_of_dirichlet_nonvanishing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Idoneal.isIdoneal_iff_mem_known_of_noRealZeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Idoneal.isIdoneal_iff_mem_known_of_dirichlet_nonvanishing' depends on axioms: [propext, Classical.choice, Quot.sound]
+Idoneal.idoneal_numbers_completeness_of_noRealZeros : Idoneal.NoRealZeros →
+  ∀ (n : ℕ), Idoneal.IsIdoneal n → n ∈ Idoneal.knownIdonealNumbers
+Idoneal.isIdoneal_iff_mem_known_of_dirichlet_nonvanishing : (∀ {q : ℕ} [inst : NeZero q] (χ : DirichletCharacter ℂ q)
+    (s : ℂ), 4374785349 / 5000000000 < s.re → ¬(χ = 1 ∧ s = 1) → DirichletCharacter.LFunction χ s ≠ 0) →
+  ∀ (n : ℕ), Idoneal.IsIdoneal n ↔ n ∈ Idoneal.knownIdonealNumbers

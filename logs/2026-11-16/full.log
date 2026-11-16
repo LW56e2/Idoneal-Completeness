@@ -1,0 +1,153 @@
+⚠ [8926/8953] Replayed Idoneal.Character
+warning: Idoneal/Character.lean:35:33: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Idoneal/Character.lean:65:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Idoneal/Character.lean:54:34: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Idoneal/Character.lean:88:57: Unused tactic linter: `push_cast [Nat.one_le_iff_ne_zero]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Idoneal/Character.lean:97:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [8928/8953] Replayed Idoneal.Forms
+warning: Idoneal/Forms.lean:64:17: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Idoneal/Forms.lean:145:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Idoneal/Forms.lean:196:10: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Idoneal/Forms.lean:325:18: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Idoneal/Forms.lean:326:18: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [8931/8953] Replayed Idoneal.Pintz
+warning: Idoneal/Pintz.lean:71:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:71:23: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:72:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Idoneal/Pintz.lean:74:14: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:76:14: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Idoneal/Pintz.lean:81:22: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:83:59: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:154:26: This simp argument is unused:
+  coe_filter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_Icc, mem_filter, mem_coe] at hm ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:154:50: This simp argument is unused:
+  mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_Icc, coe_filter, mem_filter] at hm ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:159:26: This simp argument is unused:
+  coe_filter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_Icc, mem_filter, mem_coe] at hk ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:159:50: This simp argument is unused:
+  mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_Icc, coe_filter, mem_filter] at hk ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:164:17: This simp argument is unused:
+  coe_filter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_filter, mem_coe] at hk
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:164:41: This simp argument is unused:
+  mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coe_filter, mem_filter] at hk
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:517:45: Variable name `hβ0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hβ0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Idoneal/Pintz.lean:624:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [8933/8953] Replayed Idoneal.Threshold
+warning: Idoneal/Threshold.lean:14:89: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8936/8953] Built Idoneal.ComputeRuns.HighOmega8to10 (85s)
+✔ [8937/8953] Built Idoneal.ComputeRuns.HighOmega7 (217s)
+✔ [8938/8953] Built Idoneal.ComputeRuns.HighOmega6b (225s)
+✔ [8939/8953] Built Idoneal.ComputeRuns.HighOmega6a (244s)
+✔ [8940/8953] Built Idoneal.ComputeRuns.HighOmega5a (245s)
+✔ [8941/8953] Built Idoneal.ComputeRuns.HighOmega5b (273s)
+✔ [8942/8953] Built Idoneal.ComputeRuns.SmallRange3 (403s)
+✔ [8943/8953] Built Idoneal.ComputeRuns.SmallRange1 (405s)
+✔ [8944/8953] Built Idoneal.ComputeRuns.SmallRange2 (406s)
+✔ [8945/8953] Built Idoneal.ComputeRuns.SmallRange5 (411s)
+✔ [8946/8953] Built Idoneal.ComputeRuns.SmallRange0 (414s)
+✔ [8947/8953] Built Idoneal.ComputeRuns.SmallRange7 (415s)
+✔ [8948/8953] Built Idoneal.ComputeRuns.SmallRange4 (416s)
+✔ [8949/8953] Built Idoneal.ComputeRuns.SmallRange6 (423s)
+✔ [8950/8953] Built Idoneal.Compute (10s)
+✔ [8951/8953] Built Idoneal.Main (9.0s)
+✔ [8952/8953] Built Idoneal (7.7s)
+Build completed successfully (8953 jobs).
+exit 0 seconds 458

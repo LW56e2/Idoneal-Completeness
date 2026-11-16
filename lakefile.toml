@@ -1,0 +1,25 @@
+name = "Idoneal"
+version = "1.0.0"
+defaultTargets = ["Idoneal", "IdonealUnconditional"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+# The zero-free half-plane for Dirichlet L-functions (`RH.Transport.dirichlet_nonvanishing`):
+# an unchanged copy of the project `quasi-riemann-improved`, kept in `vendor/`.
+[[require]]
+name = "RHTransport"
+path = "vendor/quasi-riemann-improved/lean"
+
+# The conditional theorem: needs Mathlib only.
+[[lean_lib]]
+name = "Idoneal"
+
+# The unconditional theorem: `Idoneal` joined with `RHTransport`.
+[[lean_lib]]
+name = "IdonealUnconditional"

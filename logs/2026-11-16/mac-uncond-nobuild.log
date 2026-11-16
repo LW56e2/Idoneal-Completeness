@@ -1,0 +1,265 @@
+warning: PrimeNumberTheoremAnd: repository '/Users/lw/idoneal-lean/unconditional/../.lake/packages/PrimeNumberTheoremAnd' has local changes
+warning: rellich-kondrachov: repository '/Users/lw/idoneal-lean/unconditional/../.lake/packages/rellich-kondrachov' has local changes
+⚠ [8973/9266] Replayed Idoneal.Character
+warning: Idoneal/Character.lean:35:33: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Idoneal/Character.lean:65:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Idoneal/Character.lean:54:34: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Idoneal/Character.lean:88:57: Unused tactic linter: `push_cast [Nat.one_le_iff_ne_zero]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Idoneal/Character.lean:97:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [8975/9266] Replayed Idoneal.Forms
+warning: Idoneal/Forms.lean:64:17: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Idoneal/Forms.lean:145:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Idoneal/Forms.lean:196:10: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Idoneal/Forms.lean:325:18: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Idoneal/Forms.lean:326:18: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [8978/9266] Replayed Idoneal.Pintz
+warning: Idoneal/Pintz.lean:71:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:71:23: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:72:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Idoneal/Pintz.lean:74:14: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:76:14: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Idoneal/Pintz.lean:81:22: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:83:59: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Idoneal/Pintz.lean:154:26: This simp argument is unused:
+  coe_filter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_Icc, mem_filter, mem_coe] at hm ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:154:50: This simp argument is unused:
+  mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_Icc, coe_filter, mem_filter] at hm ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:159:26: This simp argument is unused:
+  coe_filter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_Icc, mem_filter, mem_coe] at hk ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:159:50: This simp argument is unused:
+  mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_Icc, coe_filter, mem_filter] at hk ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:164:17: This simp argument is unused:
+  coe_filter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mem_filter, mem_coe] at hk
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:164:41: This simp argument is unused:
+  mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coe_filter, mem_filter] at hk
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Idoneal/Pintz.lean:517:45: Variable name `hβ0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hβ0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Idoneal/Pintz.lean:624:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [8980/9266] Replayed Idoneal.Threshold
+warning: Idoneal/Threshold.lean:14:89: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [9776/10059] Replayed Transport.PhysicalAnalytic.ResidueNormalization
+info: Transport/PhysicalAnalytic/ResidueNormalization.lean:70:79: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: Transport/PhysicalAnalytic/ResidueNormalization.lean:71:61: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [9966/10059] Replayed Transport.PhysicalHigh.TunedExponent
+warning: Transport/PhysicalHigh/TunedExponent.lean:36:34: `if_pos` has been deprecated: Use `ite_eq_left` instead
+⚠ [10358/10454] Replayed Transport.PhysicalHigh.TunedData
+warning: Transport/PhysicalHigh/TunedData.lean:82:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [10827/10885] Replayed Transport.PhysicalLow.LowExponent
+warning: Transport/PhysicalLow/LowExponent.lean:22:68: Variable name `hE0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Transport/PhysicalLow/LowExponent.lean:22:89: Variable name `hE1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [10837/10885] Replayed Transport.PhysicalLow.LowCaps
+warning: Transport/PhysicalLow/LowCaps.lean:59:60: Variable name `hE0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Transport/PhysicalLow/LowCaps.lean:59:81: Variable name `hE1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [10846/10885] Replayed Transport.PhysicalLow.LowSelectedBound
+warning: Transport/PhysicalLow/LowSelectedBound.lean:21:62: Variable name `hE0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Transport/PhysicalLow/LowSelectedBound.lean:21:83: Variable name `hE1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Transport/PhysicalLow/LowSelectedBound.lean:27:63: Variable name `hE0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Transport/PhysicalLow/LowSelectedBound.lean:27:84: Variable name `hE1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [10854/10885] Replayed Transport.PhysicalLow.LowRemoteMass
+warning: Transport/PhysicalLow/LowRemoteMass.lean:40:68: Variable name `hE0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Transport/PhysicalLow/LowRemoteMass.lean:40:89: Variable name `hE1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Transport/PhysicalLow/LowRemoteMass.lean:41:33: Variable name `hxy` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hxy
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Transport/PhysicalLow/LowRemoteMass.lean:41:45: Variable name `hgrow` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hgrow
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [10856/10885] Replayed Transport.PhysicalLow.LowGaussianRemote
+info: Transport/PhysicalLow/LowGaussianRemote.lean:43:62: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: Transport/PhysicalLow/LowGaussianRemote.lean:19:26: Variable name `hE0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Transport/PhysicalLow/LowGaussianRemote.lean:19:47: Variable name `hE1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Transport/PhysicalLow/LowGaussianRemote.lean:20:5: Variable name `hsumXY` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hsumXY
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [10865/10885] Replayed Transport.PhysicalHigh.FixedHigh
+warning: Transport/PhysicalHigh/FixedHigh.lean:28:5: Variable name `hτt` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hτt
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+All targets up-to-date (12031 jobs).
+lake build --no-build  4.33s user 4.24s system 93% cpu 9.176 total
