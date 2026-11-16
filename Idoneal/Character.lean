@@ -3,8 +3,9 @@ import Idoneal.Defs
 /-!
 # The character `chiZ n = J(-n | ·)` (blueprint §1 (C))
 
-Statements below are the fixed interface. Replace each `sorry`; add private lemmas freely.
-The definition of `chi` must be filled in (it is a `sorry` only in the skeleton).
+Interface: `chiZ_one`, `chiZ_mul`, `chiZ_trichotomy`, `chiZ_add_period`, `chiZ_eq_zero_iff`,
+`chiZ_four_mul_sub_one`, `chiZ_prime_eq_one_iff`, `abs_sum_chiZ_le`, `gZ_nonneg`, `one_le_gZ_sq`,
+`gZ_mul_of_coprime`, `gZ_prime_pow`, and the Dirichlet character `chi` with `chi_natCast`, `chi_ne_one`.
 -/
 
 namespace Idoneal

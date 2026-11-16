@@ -3,7 +3,7 @@ import Idoneal.Defs
 /-!
 # Binary quadratic forms of determinant `n` (blueprint §1 (F))
 
-Statements below are the fixed interface. Replace each `sorry`; add private lemmas freely.
+Interface: `mem_ambiguousForms`, `card_ambiguousForms_le`, `two_mul_sum_rho_le_lattice`.
 -/
 
 namespace Idoneal

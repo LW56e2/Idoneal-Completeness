@@ -3,7 +3,7 @@ import Idoneal.Defs
 /-!
 # Lattice points in an ellipse (blueprint §1 (Lat))
 
-The statement below is the fixed interface. Replace the `sorry`; add private lemmas freely.
+Interface: `latticeCount_le`.
 Only the reducedness part of `IsAmbiguousForm` is needed.
 -/
 

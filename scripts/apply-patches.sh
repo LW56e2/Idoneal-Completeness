@@ -16,7 +16,7 @@ apply_once() {
   if git -C "$pkg" apply --reverse --check "$patch" 2>/dev/null; then
     echo "$1: patch already applied"
   else
-    git -C "$pkg" apply "$patch"
+    git -C "$pkg" apply --whitespace=nowarn "$patch"
     echo "$1: patch applied"
   fi
 }

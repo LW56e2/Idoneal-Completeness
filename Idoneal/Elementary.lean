@@ -3,7 +3,8 @@ import Idoneal.Defs
 /-!
 # Elementary layer (blueprint §1 (E))
 
-Statements below are the fixed interface. Replace each `sorry`; add private lemmas freely.
+Interface: `hasTriple_iff_hasStrictForm`, `isIdoneal_iff`, `HasTriple.sq_mul`,
+`hasStrictForm_prime_sq_mul`.
 -/
 
 namespace Idoneal

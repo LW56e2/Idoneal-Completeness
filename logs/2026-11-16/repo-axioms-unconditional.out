@@ -1,0 +1,5 @@
+idoneal_numbers_completeness : ∀ (n : ℕ), Idoneal.IsIdoneal n → n ∈ Idoneal.knownIdonealNumbers
+isIdoneal_iff_mem_knownIdonealNumbers : ∀ (n : ℕ), Idoneal.IsIdoneal n ↔ n ∈ Idoneal.knownIdonealNumbers
+'idoneal_numbers_completeness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'isIdoneal_iff_mem_knownIdonealNumbers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RH.Transport.dirichlet_nonvanishing' depends on axioms: [propext, Classical.choice, Quot.sound]

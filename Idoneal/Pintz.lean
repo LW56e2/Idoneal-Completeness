@@ -3,7 +3,7 @@ import Mathlib
 /-!
 # A Pintz-type lower bound for `L(1)`, abstract version (blueprint §1 (P))
 
-Statements below are the fixed interface. Replace each `sorry`; add private lemmas freely.
+Interface: the structure `PintzData` and the theorems `PintzData.sum_conv_ge`, `PintzData.one_le`.
 -/
 
 namespace Idoneal

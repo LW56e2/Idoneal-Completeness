@@ -3,8 +3,7 @@ import Idoneal.Character
 /-!
 # Square roots of `-n` modulo `m` (blueprint §1 (R))
 
-The statement below is the fixed interface. Replace the `sorry`; add private lemmas freely.
-Use only the *statements* of `Idoneal/Character.lean`.
+Interface: `gZ_le_sum_rho`.
 -/
 
 namespace Idoneal

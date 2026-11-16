@@ -116,7 +116,23 @@ All of the following is in `logs/2026-11-16/`.
   axioms print the same (`mac-axuncond.out`).
 
 During that run the two projects lay side by side and the joining file had a small package of its
-own; this repository holds the same Lean files in one workspace.
+own. The first commit of this repository holds exactly those Lean files, in one workspace; the
+second commit changes comments in the headers of eight theory modules and nothing else
+(`git diff HEAD~1 HEAD -- Idoneal`).
+
+* **This layout** (same day, on the Mac): with the build outputs of the run placed in this
+  workspace, Lake accepted every target except `IdonealUnconditional` (it changed package) and,
+  after the second commit, the eight edited modules and what imports them. Those twelve small
+  modules were rebuilt here in under a minute; no kernel-run module and no module of the vendored
+  project was rebuilt. `lake build --no-build` then reports all 12 032 targets up to date, and the
+  two scripts print the three standard axioms (`repo-axioms-conditional.out`,
+  `repo-axioms-unconditional.out`).
+* **Fresh clone** (same day, on the Mac): a new clone, given the prebuilt outputs, was accepted by
+  Lake as fully built (all 12 032 targets), so the committed files are complete. With nothing
+  prebuilt, `lake env lean --version` fetched all 15 pinned packages from the network and
+  `scripts/apply-patches.sh` produced the same patched sources as the verified build.
+* **Not done**: compiling everything again from a fresh clone (the Mathlib cache download and the
+  full build).
 
 ## Provenance and licences
 

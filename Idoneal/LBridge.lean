@@ -3,9 +3,9 @@ import Idoneal.Character
 /-!
 # Bridge to Mathlib's `DirichletCharacter.LFunction` (blueprint §1 (LB))
 
-Statements below are the fixed interface. Replace each `sorry`; add private lemmas freely.
-Use only the *statements* of `Idoneal/Character.lean` (in particular `chi_natCast`, `chi_ne_one`,
-`abs_sum_chiZ_le`).
+Interface: `Lreal`, `tendsto_partial_sums_Lreal`, `Lreal_nonneg_of_noRealZeros`.
+From `Idoneal/Character.lean` only the statements `chi_natCast`, `chi_ne_one`, `abs_sum_chiZ_le`
+and `chiZ_trichotomy` are used.
 -/
 
 namespace Idoneal

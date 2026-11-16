@@ -3,7 +3,7 @@ import Idoneal.Defs
 /-!
 # Thresholds (blueprint §1 (T))
 
-The statement below is the fixed interface. Replace the `sorry`; add private lemmas freely.
+Interface: `threshold`.
 -/
 
 namespace Idoneal
